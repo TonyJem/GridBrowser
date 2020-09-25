@@ -6,8 +6,9 @@
 //
 
 import Cocoa
+import WebKit
 
-class ViewController: NSViewController {
+class ViewController: NSViewController, WKNavigationDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
