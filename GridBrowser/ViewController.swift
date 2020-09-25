@@ -9,7 +9,11 @@ import Cocoa
 import WebKit
 
 class ViewController: NSViewController, WKNavigationDelegate {
-
+    //    MARK: Properties
+    var rows: NSStackView!
+    
+    //    MARK: - StartHere
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
