@@ -34,5 +34,16 @@ class ViewController: NSViewController, WKNavigationDelegate {
     
     @IBAction func adjustColumns(_ sender: NSSegmentedControl){
     }
+    
+//    MARK: - Methods
+    func makeWebView() -> NSView {
+        let webView = WKWebView()
+        webView.navigationDelegate = self
+        webView.wantsLayer = true
+        webView.load(URLRequest(url: URL(string: "http://www.apple.com")!))
+        
+        return webView
+    }
+    
 }
 
