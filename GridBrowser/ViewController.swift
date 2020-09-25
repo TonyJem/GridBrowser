@@ -62,7 +62,8 @@ class ViewController: NSViewController, WKNavigationDelegate {
         let webView = WKWebView()
         webView.navigationDelegate = self
         webView.wantsLayer = true
-        webView.load(URLRequest(url: URL(string: "http://www.apple.com")!))
+        webView.load(URLRequest(url: URL(string: "http://open-up.eu/en")!))
+        // http://www.apple.com
         
         return webView
     }
